@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+  background-color: #0b0f19;
+  color: #f1f5f9;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  text-align: center;
+  padding: 2.5rem 1rem;
+  border-bottom: 2px solid #2563eb;
+}
+
+.app-header h1 {
+  font-size: 2.4rem;
+  color: #3b82f6;
+  font-weight: 800;
+}
+
+.main-layout {
+  max-width: 1300px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+@media (max-width: 850px) {
+  .main-layout { grid-template-columns: 1fr; }
+}
+
+.control-card {
+  background: #111827;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #1f2937;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.control-card h2 {
+  color: #f3f4f6;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #374151;
+  padding-bottom: 0.5rem;
+}
+
+.input-group { margin-bottom: 1.2rem; }
+.input-group label {
+  display: block;
+  color: #9ca3af;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}
+.input-group input, .input-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 5px;
+  color: white;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.submit-btn:hover { background: #1d4ed8; }
+
+.logs-stream { max-height: 480px; overflow-y: auto; }
+.log-node {
+  background: #1f2937;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-left: 5px solid #10b981;
+}
+
+.meta-loc { font-size: 0.85rem; color: #60a5fa; margin: 0.2rem 0; }
+.body-desc { font-size: 0.9rem; color: #d1d5db; font-style: italic; }
+.badge-alert {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+.empty-msg { text-align: center; color: #6b7280; padding-top: 2rem; }
